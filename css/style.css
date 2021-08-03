@@ -1,0 +1,218 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: tahoma;
+}
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header__audio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.audio__img {
+  margin-right: 8px;
+}
+.audio__text {
+  color: #a0a7b1;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.progress-text {
+  display: flex;
+  color: #a0a7b1;
+  font-size: 16px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 10px;
+  align-items: flex-end;
+}
+.header__progress {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+.progress__bar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.progress-percent {
+  display: flex;
+  justify-content: space-between;
+  color: #a0a7b1;
+  font-size: 16px;
+}
+.progress-items {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 23px;
+  border: 1px solid #8665fc;
+  border-radius: 5px;
+}
+.progress__bar-item {
+  flex-basis: 100%;
+  border-right: 1px solid #8665fc;
+}
+.progress__bar-item:last-child {
+  border-right: none;
+}
+.active {
+  background-color: #8665fc;
+  border-radius: 3px 0px 0px 3px;
+}
+.hint-text {
+  color: #5b5f68;
+}
+.question p {
+  color: #5b5f68;
+  margin-top: 30px;
+  margin-left: 25px;
+  font-size: 20px;
+}
+.start-audio-text {
+  color: white;
+}
+.content__container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 405px;
+  margin-top: 12px;
+  background: #f7faff;
+  box-shadow: 0px 24px 40px -15px rgba(92, 102, 115, 0.3);
+  border-radius: 12px;
+  padding: 30px 30px;
+}
+.question {
+  width: 100%;
+  height: 275px;
+  background: #ffffff;
+  border: 1px solid #dae1f2;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+.hint {
+  display: flex;
+  border: 1px solid #dae1f2;
+  border-radius: 12px;
+  flex-direction: row;
+  align-items: center;
+  background-image: url(/img/Lamp.svg);
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  padding: 20px 20px 20px 50px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #5b6673;
+  line-height: 22px;
+  color: #5b5f68;
+  width: 100%;
+}
+.content-left {
+  display: flex;
+  flex-direction: column;
+  width: 77%;
+}
+.content-right {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 50px;
+}
+.start-audio__button {
+  background-color: #4f62db;
+  display: flex;
+  align-items: center;
+  background: #5061dc;
+  border: 1px solid #c1cce7;
+  border-radius: 12px;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  padding: 29px;
+  width: 100%;
+}
+.start-audio-text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+}
+.audio__time {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #a0a7b1;
+}
+.start-audio__button img {
+  margin-bottom: 20px;
+}
+.repeat-audio__button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #c1cce7;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 29px;
+  width: 100%;
+}
+.repeat-audio__button img {
+  margin-bottom: 20px;
+}
+.repeat-audio-text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  color: #a0a7b1;
+}
+.button {
+  background: transparent;
+  border: none;
+  padding: 15px 55px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.button-primary {
+  background: #5061dc;
+  color: white;
+}
+.button-primary:disabled {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  background: #c1cce7;
+  margin-left: 15px;
+}
+.button-default {
+  border: 1px solid #5061dc;
+  color: #5061dc;
+}
+.button__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
