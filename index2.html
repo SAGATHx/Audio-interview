@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/scss/index.css">
+</head>
+
+<body>
+    <section class="header">
+    </section>
+    <section class="content">
+        <div class="content__container container">
+            <div class="header__container container">
+                <div class="header__audio">
+                    <img class="audio__img" src="/img/Voice.svg" alt="">
+                    <p class="audio__text">Аудиоинтервью для вакансии:<span>machine_learner</span></p>
+                </div>
+                <div class="header__link">
+                    <img src="/img/header__link-img.svg" alt="">
+                    <a href="#">Скопировать ссылку на опросник</a>
+                </div>
+            </div>
+            <div class="table">
+                <div class="table__head">
+                    <div class="tr">
+                        <div class="th">
+                            <img src="/img/Tick Square.svg" alt="">
+                        </div>
+                        <div class="th">
+                            <p>Вопрос</p>
+                        </div>
+                        <div class="th">
+                            <p>Тип вопроса</p>
+                        </div>
+                        <div class="th">
+                            <p>Связь с элементом разметки</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__body">
+                    <div class="tr">
+                        <div class="td">
+                            <img src="/img/Tick Square.svg" alt="">
+                        </div>
+                        <div class="td">
+                            <p class="table__body-title">Задачи какого характера вам нравится решать больше всего?</p>
+                        </div>
+                        <div class="td">
+                            <p class="table__body-sub-title">Калибровочный</p>
+                        </div>
+                        <div class="td"></div>
+                    </div>
+                    <div class="tr">
+                        <div class="td">
+                            <img src="/img/Tick Square.svg" alt="">
+                        </div>
+                        <div class="td">
+                            <p class="table__body-title">Это вопрос на оценку навыков, создаваемый генератором вопросов.
+                            </p>
+                        </div>
+                        <div class="td">
+                            <p class="table__body-sub-title">Оценка навыков</p>
+                        </div>
+                        <div class="td"><span class="tag tag-orange">Методы машинного обучения 36%</span></div>
+                    </div>
+                    <div class="tr">
+                        <div class="td">
+                            <img src="/img/Tick Square.svg" alt="">
+                        </div>
+                        <div class="td">
+                            <p class="table__body-title">Это другой вопрос на оценку навыков, создаваемый генератором
+                                вопросов.
+                            </p>
+                        </div>
+                        <div class="td">
+                            <p class="table__body-sub-title">Оценка навыков</p>
+                        </div>
+                        <div class="td"><span class="tag tag-orange">Глубокое обучение нейронной сети 20%</span></div>
+                    </div>
+                    <div class="tr">
+                        <div class="td">
+                            <img src="/img/Tick Square.svg" alt="">
+                        </div>
+                        <div class="td">
+                            <p class="table__body-title">Это еще один вопрос, создаваемый генератором вопросов.</p>
+                        </div>
+                        <div class="td">
+                            <p class="table__body-sub-title">Оценка навыков</p>
+                        </div>
+                        <div class="td"> <span class="tag tag-red">Python 82%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content__footer">
+                <img src="/img/Plus.svg" alt="">
+                <a href="">Добавить вопрос</a>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="button">
+        <div class="button__container container">
+            <div class="hint">
+                <p class="hint-text">Вопросы сформированы на основе элементов вакансии, помеченных как приоритетные. Вы
+                    <br>
+                    можете отредактировать вопросы, изменить их количество а также настроить другие параметры.
+                </p>
+            </div>
+            <div class="button-footer">
+                <a href="#modal"><button class="button button-default">Настройки</button></a>
+                <button class="button button-primary">Сохранить</button>
+            </div>
+        </div>
+    </section>
+    <div id="modal" class="modal">
+        <div class="modal__body">
+            <div class="modal__content settings">
+                <div class="settings__left">
+                    <div class="settings__content">
+                        <p>Лимиты</p>
+                    </div>
+                    <div class="settings__item">
+                        <p>Время жизни опросника (календ. дней)</p>
+                        <input type="text" value="10" class="settings__numbers"></input>
+                    </div>
+                    <div class="settings__item">
+                        <p>Максимальное количество вопросов</p>
+                        <input type="text" value="10" class="settings__numbers"></input>
+                    </div>
+                    <div class="settings__item">
+                        <p>Ограничение времени на один ответ (мин.)</p>
+                        <input type="text" value="2" class="settings__numbers"></input>
+                    </div>
+                    <div class="settings__skills">
+                        Коммуникативные навыки
+                    </div>
+                    <div class="settings__skills-bar bar">
+                        <div class="bar__item active"></div>
+                        <div class="bar__item"></div>
+                    </div>
+                    <div class="settings__skills-pointer"><img src="/img/Pointer.svg" alt=""></div>
+                    <div class="settings__skills-text">
+                        <p>Низкий</p>
+                        <p>Средний</p>
+                        <p>Высокий</p>
+                    </div>
+                    <div class="settings__hint">
+                        <p class="settings__hint-text">Уровень развития коммуникативных навыков, необходимый для работы
+                            в
+                            определенной профессиональной сфере. По умолчанию настройка соответствует характеру
+                            вакансии.</p>
+                    </div>
+                    <div class="settings__checkbox">
+                        <input type="checkbox">
+                        <p>Разрешить создавать новое аудиоинтервью с тем же списком кандидатов (предыдущий отчет при
+                            этом будет удален).</p>
+                    </div>
+                </div>
+                <div class="settings__right">
+                    <div class="settings__content">
+                        <p>Настройки доступа кандидатов</p>
+                    </div>
+                    <div class="settings__email">
+                        <div class="email">
+                            <input type="checkbox">
+                            <a>Отправлять на email.</a>
+                        </div>
+                        <div class="list">
+                            <a>Список резюме</a>
+                            <img src="/img/foreign.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="settings__content-n">
+                        <p>Тема сообщения</p>
+                    </div>
+                    <div class="settings__subject">
+                        <p>Приглашение на аудиоинтервью на вакансию #vacancy=id_3846</p>
+                    </div>
+                    <div class="settings__content-n">
+                        <p>Текст сообщения:</p>
+                    </div>
+                    <div class="settings__text">
+                        <p>Здравствуйте!<br>
+                            <br>
+                            Благодарим за отклик на вакансию #vacancy=id_384678.<br>
+                            <br>
+                            Приглашаем вас пройти аудиоинтервью в удобное время. Кликните здесь, чтобы перейти на
+                            веб-форму с вопросами.<br>
+                            <br>
+                            С уважением,
+                            #username=id_455302
+                            #useremail=id_455302<br>
+                            <br>
+                        </p>
+                    </div>
+                    <div class="settings__right-button">
+                        <a class="settings__close" href="#">
+                            <div class="settings__close-button">Отменить</div>
+                        </a>
+                        <a class="settings__save" href="#">
+                            <div class="settings__save-button">Сохранить</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

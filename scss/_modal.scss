@@ -1,0 +1,285 @@
+.modal {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+  &__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__content {
+    display: flex;
+    padding: 32px;
+    width: 926px;
+    background: #ffffff;
+    border: 1px solid #f7faff;
+    box-sizing: border-box;
+    box-shadow: 0px 24px 40px -15px rgba(92, 102, 115, 0.3),
+      0px 0px 50px -10px rgba(243, 243, 243, 0.2);
+    border-radius: 16px;
+    flex-direction: row;
+  }
+  .settings {
+    display: flex;
+    &__item {
+      color: #5b6673;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+    &__left {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 408px;
+      margin-right: 46px;
+    }
+    &__right {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 408px;
+    }
+    &__content {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      color: #98a4bc;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+    }
+    &__numbers {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 23px;
+      color: #5061dc;
+      border: 1px solid #dae1f2;
+      box-sizing: border-box;
+      border-radius: 8px;
+      padding: 6px 12px;
+    }
+    &__item input {
+      text-align: center;
+      width: 43px;
+      height: 35px;
+    }
+    &__skills {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      color: #98a4bc;
+      margin-top: 24px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+    &__skills-bar {
+      display: flex;
+      height: 23px;
+      justify-content: space-between;
+      margin-bottom: 3px;
+    }
+    .bar {
+      &__item {
+        &.active {
+          background-color: #8665fc;
+          border-radius: 2px 2px 2px 2px;
+        }
+        border: 1px solid #8564ff;
+        box-sizing: border-box;
+        border-radius: 2px;
+        width: 49.8%;
+      }
+    }
+    &__skills-pointer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 3px;
+    }
+    &__skills-text {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      color: #8564ff;
+      margin-bottom: 24px;
+    }
+    &__hint {
+      display: flex;
+      border: 1px solid #dae1f2;
+      border-radius: 12px;
+      flex-direction: row;
+      align-items: center;
+      background-image: url(/img/Lamp.svg);
+      background-repeat: no-repeat;
+      background-position: 16px 16px;
+      padding: 16px 16px 16px 56px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      color: #5b6673;
+      line-height: 22px;
+      color: #5b5f68;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+    &__hint-text {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      color: #5b6673;
+    }
+    &__checkbox {
+      display: flex;
+      flex-direction: row;
+    }
+    &__checkbox p {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      color: #3a4a61;
+    }
+    &__checkbox input {
+      appearance: none;
+      width: 14px;
+      height: 14px;
+      margin-right: 0.3rem;
+      background-color: #fff;
+      border: 1px solid #5061dc;
+      border-radius: 4px;
+      position: relative;
+      &::after {
+        display: block;
+        &:checked {
+          display: block;
+        }
+        content: "";
+        height: 10px;
+        width: 10px;
+        background-image: url(/img/Tick-Square.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin: 1px;
+      }
+    }
+    &__email {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+    &__email input {
+      appearance: none;
+      width: 14px;
+      height: 14px;
+      margin-right: 0.3rem;
+      background-color: #fff;
+      border: 1px solid #5061dc;
+      border-radius: 4px;
+      position: relative;
+      &::after {
+        display: block;
+        &:checked {
+          display: block;
+        }
+        content: "";
+        height: 10px;
+        width: 10px;
+        background-image: url(/img/Tick-Square.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin: 1px;
+      }
+    }
+    &__email .email a {
+      color: #5061dc;
+    }
+    &__email .list a {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      color: #5061dc;
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+    &__subject {
+      border: 1px solid #dae1f2;
+      box-sizing: border-box;
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 24px;
+    }
+    &__subject p {
+      color: #3a4a61;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &__text {
+      border: 1px solid #dae1f2;
+      box-sizing: border-box;
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 26px;
+    }
+    &__text p {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      color: #3a4a61;
+    }
+    &__close {
+      text-decoration: none;
+    }
+    &__close-button {
+      color: #5061dc;
+      padding: 12px 60px;
+      width: 199px;
+      height: 48px;
+      border: 1px solid #5061dc;
+      box-sizing: border-box;
+      border-radius: 8px;
+    }
+    &__save {
+      text-decoration: none;
+    }
+    &__save-button {
+      color: white;
+      background-color: #5061dc;
+      padding: 12px 60px;
+      width: 199px;
+      height: 48px;
+      background: #5061dc;
+      box-shadow: 0px 16px 20px -10px rgba(37, 54, 171, 0.5);
+      border-radius: 8px;
+    }
+    &__right-button {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+.settings__content-n {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #98a4bc;
+  margin-bottom: 14px;
+}
